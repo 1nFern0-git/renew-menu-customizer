@@ -4,16 +4,13 @@
 
 Кастомизация меню продления подписки БЕЗ изменений в ядре.
 
-Версия: 1.0.1-alpha
-Дата: 2026-01-04
-Автор: 1nFern0-git
 """
 
 from .middleware import RenewMenuMiddleware
 from .router import router
 
 __all__ = ["router", "RenewMenuMiddleware"]
-__version__ = "1.0.1-alpha"
+__version__ = "1.0.1-beta"
 
 
 # При импорте модуля регистрируем middleware глобально

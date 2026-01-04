@@ -1,7 +1,7 @@
 """
 Модуль renew_menu_customizer - Кастомизация меню продления
 
-Версия: 1.0.1-alpha
+Версия: 1.0.1-beta
 """
 
 from aiogram import F, Router
