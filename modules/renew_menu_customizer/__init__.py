@@ -4,8 +4,8 @@
 
 Кастомизация меню продления подписки БЕЗ изменений в ядре.
 
-Версия: 1.0.0-alpha
-Дата: 2026-01-03
+Версия: 1.0.1-alpha
+Дата: 2026-01-04
 Автор: 1nFern0-git
 """
 
@@ -13,7 +13,7 @@ from .middleware import RenewMenuMiddleware
 from .router import router
 
 __all__ = ["router", "RenewMenuMiddleware"]
-__version__ = "1.0.0-alpha"
+__version__ = "1.0.1-alpha"
 
 
 # При импорте модуля регистрируем middleware глобально
@@ -24,7 +24,7 @@ try:
     dp.callback_query.outer_middleware(RenewMenuMiddleware())
     
     from logger import logger
-    logger.info("[RenewMenuCustomizer] Middleware зарегистрирован глобально")
+    logger.info("[RenewMenuCustomizer] Middleware зарегистрирован")
 except Exception as e:
     # Если не удалось зарегистрировать - не критично, логируем
     try:
